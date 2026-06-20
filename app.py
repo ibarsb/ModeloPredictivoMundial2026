@@ -70,12 +70,16 @@ teams_db = {
     }
 }
 
+# Unificar todo en un solo diccionario plano
 todos_los_equipos = {}
 for conf, equipos in teams_db.items():
     for nombre, stats in equipos.items():
         todos_los_equipos[nombre] = stats
 
 st.title("🏆 Mundial 2026 — Predictor Avanzado Pro")
+
+st.caption("🚀 Desarrollado por **Ibars Brian** | Proyecto Final de Ciencia de Datos")
+
 st.markdown("Sistema de simulación Monte Carlo basado en Poisson bivariado con ajuste Dixon-Coles.")
 
 # --- MEJORA 1: EXPANDER METODOLÓGICO PARA LA ENTREGA DE LA TAREA ---
